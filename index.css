@@ -68,12 +68,40 @@ header .shop-card {
   top: 78px;
   right: 0;
   width: 450px;
-  min-height: 150px;
   background: #f0ecec;
   -webkit-box-shadow: 4px 6px 8px 4px rgba(103, 149, 184, 0.2);
   -moz-box-shadow: 4px 6px 8px 4px rgba(103, 149, 184, 0.2);
   box-shadow: 4px 6px 8px 4px rgba(103, 149, 184, 0.2);
   z-index: 3;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+header .shop-card .empty h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+header .shop-card .item {
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
+
+header .shop-card .item img {
+  width: 70px;
+  float: left;
+  margin-right: 20px;
+}
+
+header .shop-card .item h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+header .shop-card .item p {
+  color: #797979;
+  font-weight: 600;
 }
 
 header .presentation {
