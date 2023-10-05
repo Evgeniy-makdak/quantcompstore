@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/quantcompstore/static/css/main.c549650e.css",
-    "main.js": "/quantcompstore/static/js/main.04607052.js",
+    "main.css": "/quantcompstore/static/css/main.bd3f52e3.css",
+    "main.js": "/quantcompstore/static/js/main.0135ac68.js",
     "static/media/everest.jpeg": "/quantcompstore/static/media/everest.f31152dfe91afe179e31.jpeg",
     "index.html": "/quantcompstore/index.html",
-    "main.c549650e.css.map": "/quantcompstore/static/css/main.c549650e.css.map",
-    "main.04607052.js.map": "/quantcompstore/static/js/main.04607052.js.map"
+    "main.bd3f52e3.css.map": "/quantcompstore/static/css/main.bd3f52e3.css.map",
+    "main.0135ac68.js.map": "/quantcompstore/static/js/main.0135ac68.js.map"
   },
   "entrypoints": [
-    "static/css/main.c549650e.css",
-    "static/js/main.04607052.js"
+    "static/css/main.bd3f52e3.css",
+    "static/js/main.0135ac68.js"
   ]
 }
