@@ -194,6 +194,26 @@ header .presentation::before {
   border-color: rgb(154, 26, 26);
 }
 
+.full-item {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 7777;
+  overflow: auto;
+}
+
+.full-item>div {
+  position: relative;
+  width: 600px;
+  margin: 10% auto;
+  padding: 40px 30px;
+  background: #f0ecec;
+  border-radius: 10px;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
@@ -210,28 +230,33 @@ main .item {
   padding-bottom: 20px;
 }
 
-main .item img {
+main .item img,
+.full-item .item img {
   width: 100%;
   border-radius: 10px 10px 0 0;
   transition: transform 500ms ease;
+  cursor: pointer;
 }
 
-main .item img:hover {
+main .item img:hover,
+.full-item .item img:hover {
   transform: scale(1.1);
 }
 
-main h2,
-main p,
-main b {
+main h2, .full-item h2,
+main p, .full-item p,
+main b, .full-item b {
   margin: 30px 20px;
   color: #333;
 }
 
-main b {
+main b,
+.full-item b {
   color: rgb(199, 19, 64);
 }
 
-.add-to-card {
+main .add-to-card,
+.full-item .add-to-card {
   position: absolute;
   right: 20px;
   bottom: 20px;
@@ -247,7 +272,8 @@ main b {
   transition: transform 500ms ease;
 }
 
-.add-to-card:hover {
+main .add-to-card:hover,
+.full-item .add-to-card:hover {
   transform: scale(1.5) translateY(-5px);
 }
 
