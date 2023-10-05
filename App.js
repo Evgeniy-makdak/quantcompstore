@@ -14,34 +14,39 @@ class App extends React.Component {
           title: "Gemini Mini",
           img: "./Gemini_Mini.jpeg",
           desk: "Gemini Mini содержит два кубита, но программное обеспечение может имитировать работу сразу восьми кубитов. Устройство весом 14 кг получило небольшой дисплей. Энергопотребление новинки составляет 60 Вт.",
-          price: "$8900",
+          price: "8900",
         },
         {
           id: 2,
           title: "Gemini",
           img: "./Gemini.jpeg",
           desk: "Модель Gemini обладает двумя кубитами, весит 44 кг и потребляет 100 Вт. Этот компьютер способен выполнять гораздо более сложные операции.",
-          price: "$43000",
+          price: "43000",
         },
         {
           id: 3,
           title: "Triangulum",
           img: "./Triangulum.jpeg",
           desk: "Самая мощная из представленных — модель Triangulum. Ее энергопотребление составляет 300 Вт. У этого компьютера есть порт для программирования, а его квантовые схемы можно настраивать.",
-          price: "$58000",
+          price: "58000",
         },
       ],
     };
     this.addToOrder = this.addToOrder.bind(this);
+    this.deleteOrder = this.deleteOrder.bind(this);
   }
   render() {
     return (
       <div className="wrapper">
-        <Header orders={this.state.orders} />
+        <Header orders={this.state.orders} onDelete={this.deleteOrder} />
         <Items items={this.state.items} onAdd={this.addToOrder} />
         <Footer />
       </div>
     );
+  }
+
+  deleteOrder(id) {
+    this.setState({orders: this.state.orders.filter(el => el.id !== id)})
   }
 
   addToOrder(item) {

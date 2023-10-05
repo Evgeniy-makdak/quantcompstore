@@ -95,13 +95,43 @@ header .shop-card .item img {
 }
 
 header .shop-card .item h2 {
+  display: flex;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
+  margin-top: 10px;
+  align-items: center;
 }
 
 header .shop-card .item p {
   color: #797979;
   font-weight: 600;
+}
+
+header .shop-card .item b {
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+}
+
+header .shop-card .item .delete-cart {
+  color: #ca5252;
+  position: relative;
+  top: -30px;
+  float: right;
+  cursor: pointer;
+  transition: color, transform 500ms ease;
+}
+
+header .shop-card .item .delete-cart:hover {
+  color: rgb(56, 56, 178);
+  transform: scale(1.5);
+}
+
+header .shop-card .amount {
+  float: left;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 header .presentation {

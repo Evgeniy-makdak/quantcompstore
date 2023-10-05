@@ -4,18 +4,21 @@ import { FaShoppingBag } from "react-icons/fa";
 import Order from "../Order";
 
 const showOrders = (props) => {
+  let amount = 0
+  props.orders.forEach(el => amount += Number.parseFloat(el.price))
   return (
     <div>
       {props.orders.map(el => (
-        <Order key={el.id} item={el} />
+        <Order onDelete={props.onDelete} key={el.id} item={el} />
       ))}
+      <p className="amount">Total: $ {new Intl.NumberFormat().format(amount)}</p>
     </div>
   );
 };
 
 const showNothing = () => {
   return (<div className="empty">
-    <h2>Корзина пустая</h2>
+    <h2>Cart empty</h2>
   </div>)
 }
 
