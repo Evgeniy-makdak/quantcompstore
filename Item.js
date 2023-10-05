@@ -7,7 +7,7 @@ export class Item extends Component {
         <img src={"./img/" + this.props.item.img} />
         <h2>{this.props.item.title}</h2>
         <p>{this.props.item.desk}</p>
-        <b>{this.props.item.price}</b>
+        <b>$ {this.props.item.price}</b>
         <div className='add-to-card' onClick={() => this.props.onAdd(this.props.item)}>+</div>
       </div>
     )
